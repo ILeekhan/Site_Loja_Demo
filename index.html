@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Site Loja Demo</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+<body class="pagina-login">
+    <div class="fundo-gradiente"></div>
+
+    <main class="caixa-login">
+        <div class="logo-texto">🏪</div>
+        <h2>Site Loja Demo</h2>
+        <p class="subtitulo">Plataforma simples e funcional</p>
+
+        <div class="grupo-campo">
+            <input type="text" id="usuario" placeholder="Seu usuário" required>
+        </div>
+        <div class="grupo-campo">
+            <input type="password" id="senha" placeholder="Sua senha" required>
+        </div>
+
+        <button onclick="fazerLogin()" class="botao-principal">Entrar</button>
+        <button onclick="abrirPopup()" class="botao-secundario">Criar Conta</button>
+    </main>
+
+    <!-- Popup de Cadastro -->
+    <div id="popupCadastro" class="popup">
+        <div class="conteudo-popup">
+            <span onclick="fecharPopup()" class="fechar">&times;</span>
+            <h3>Nova Conta</h3>
+            <div class="grupo-campo">
+                <input type="text" id="novoUsuario" placeholder="Escolha um usuário" required>
+            </div>
+            <div class="grupo-campo">
+                <input type="password" id="novaSenha" placeholder="Escolha uma senha" required>
+            </div>
+            <button onclick="criarConta()" class="botao-principal">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

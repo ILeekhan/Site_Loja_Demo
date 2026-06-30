@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .grade-menu, .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .caixa-login {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .cartao, .cartao-menu, .cartao-produto {
+        padding: 16px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+}

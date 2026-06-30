@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nome": "Monster Energy",
+        "preco": 8.90,
+        "descricao": "Bebida energética sabor original, 473ml",
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 2,
+        "nome": "Máscara Kitsune",
+        "preco": 79.90,
+        "descricao": "Máscara artesanal inspirada na cultura japonesa",
+        "categoria": "Artesanato"
+    },
+    {
+        "id": 3,
+        "nome": "Xis Salada",
+        "preco": 15.90,
+        "descricao": "Lanche tradicional gaúcho com ingredientes frescos",
+        "categoria": "Alimentação"
+    }
+]
