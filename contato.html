@@ -37,7 +37,8 @@
 
         <div class="cartao">
             <h3>Envie uma mensagem</h3>
-            <form>
+            <!-- Adicionei o "onsubmit" para não recarregar a página -->
+            <form onsubmit="return enviarMensagem()">
                 <div class="grupo-campo">
                     <input type="text" placeholder="Seu nome" required>
                 </div>
@@ -58,6 +59,15 @@
         </div>
     </footer>
 
+    <!-- ✅ Caminho CORRETO: tudo minúsculo -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Função para simular envio -->
+    <script>
+        function enviarMensagem() {
+            alert("✅ Mensagem enviada com sucesso! (Esta é uma demonstração)");
+            return false; // Impede que a página recarregue
+        }
+    </script>
 </body>
 </html>

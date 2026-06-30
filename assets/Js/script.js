@@ -1,6 +1,6 @@
-console.log("✅ Sistema carregado com sucesso!");
+console.log("✅ Sistema carregado!");
 
-// Controle do Popup
+// Popup
 function abrirPopup() {
     const popup = document.getElementById("popupCadastro");
     if (popup) popup.style.display = "flex";
@@ -16,33 +16,27 @@ window.addEventListener("click", (e) => {
     if (popup && e.target === popup) fecharPopup();
 });
 
-// Cadastro e Login
+// Cadastro
 function criarConta() {
     const usuario = document.getElementById("novoUsuario").value.trim();
     const senha = document.getElementById("novaSenha").value.trim();
-
-    if (!usuario || !senha) {
-        alert("Preencha todos os campos!");
-        return;
-    }
-
+    if (!usuario || !senha) return alert("Preencha todos os campos!");
     localStorage.setItem("usuario", usuario);
     localStorage.setItem("senha", senha);
-    alert("Conta criada com sucesso!");
+    alert("Conta criada!");
     fecharPopup();
-
     document.getElementById("novoUsuario").value = "";
     document.getElementById("novaSenha").value = "";
 }
 
+// Login
 function fazerLogin() {
     const usuario = document.getElementById("usuario").value.trim();
     const senha = document.getElementById("senha").value.trim();
     const salvoUsuario = localStorage.getItem("usuario");
     const salvoSenha = localStorage.getItem("senha");
-
     if (usuario === salvoUsuario && senha === salvoSenha) {
-        alert("Login realizado! Bem-vindo(a)!");
+        alert("Login realizado!");
         window.location.href = "menu.html";
     } else {
         alert("Usuário ou senha incorretos!");

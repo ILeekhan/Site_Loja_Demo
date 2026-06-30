@@ -218,7 +218,7 @@ button {
 
 /* Popup */
 .popup {
-    display: none;
+    display: none; /* ✅ Começa fechado */
     position: fixed;
     top: 0;
     left: 0;
